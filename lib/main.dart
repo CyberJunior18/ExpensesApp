@@ -1,6 +1,12 @@
-import 'package:expenses_tracker/expenses_app.dart';
 import 'package:flutter/material.dart';
 
+import 'expenses_app.dart';
+
 void main() {
-  runApp(const ExpensesApp());
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ExpensesApp(),
+    ),
+  );
 }

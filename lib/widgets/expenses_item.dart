@@ -19,7 +19,7 @@ class ExpenseItem extends StatelessWidget {
                 Text('\$${expense.amount.toStringAsFixed(2)}'),
                 Row(
                   children: [
-                    Icon(Icons.category),
+                    Icon(categoryIcon[expense.category]),
                     SizedBox(width: 8),
                     Text(
                       '${expense.date.day}/${expense.date.month}/${expense.date.year}',
